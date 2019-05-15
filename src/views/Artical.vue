@@ -8,7 +8,7 @@
 <script>
 // @ is an alias to /src
 // import HelloWorld from '@/components/HelloWorld.vue'
-import api from '../utils/api'
+// import api from '../utils/api'
 import marked from 'marked'
 export default {
 	name: 'artical',
@@ -19,7 +19,6 @@ export default {
 	},
 	methods: {
 		back() {
-			console.log(this.$store.state.homeArticalData)
 			this.$router.push({name: 'home'})
 		}
 	},
@@ -31,7 +30,6 @@ export default {
 	mounted() {
 		let temp = this.$store.state.homeArticalData
 		this.articalContent = marked(temp[temp.length - this.$route.query.id].body)
-		console.log(this.articalContent)
 	},
 }
 
