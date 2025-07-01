@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="icon" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, shrink-to-fit=no">
     <title>Vite App</title>
     <style>
       html, body {
@@ -14,6 +14,10 @@
         overflow: hidden;
         position: fixed;
         -webkit-overflow-scrolling: touch;
+        /* 防止 Safari 缩放 */
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        touch-action: pan-y;
       }
       
       #app {
@@ -23,8 +27,8 @@
         position: relative;
       }
     </style>
-    <script type="module" crossorigin src="/assets/index-OJxeG9zZ.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DtMj8EQX.css">
+    <script type="module" crossorigin src="/assets/index-BdtsLpjx.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-C-cJ6-IU.css">
   </head>
   <body>
     <div id="app"></div>
